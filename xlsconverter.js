@@ -1,11 +1,6 @@
-var Promise = require('promise');
-
-
 
 module.exports = {
-    // parsing db 
-    data: function(dbname){
-        return new Promise(function (fulfill, reject){
+    data: function(dbname,callback){
         var file={};
         var header;
         var row;
@@ -32,8 +27,7 @@ module.exports = {
                 file.row=file.row.toString();
                 file.row=file.row.replace(/,/gi,"");
                 data = file.col+file.row
-            fulfill(data)
-        })
+            callback(data)
         })
     }
 }
