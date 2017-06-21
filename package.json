@@ -1,0 +1,11 @@
+{
+  "name": "excel-downloader",
+  "version": "1.0.0",
+  "description": "Parses Mondodb Data into excel file ",
+  "main": "xlsconverter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shashank shashank.srivastava1@kelltontech.com",
+  "license": "ISC"
+}
